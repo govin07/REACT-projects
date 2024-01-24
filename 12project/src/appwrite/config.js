@@ -94,8 +94,7 @@ export class Service{
                 conf.appwriterDatabaseId,
                 conf.appwriterColleactionId,
                 queries,
-                100,
-                0,
+                
             )
             
         } catch (error) {
@@ -104,6 +103,43 @@ export class Service{
             
         }
 
+    }
+
+    //file uploadfile service
+    async uploadFile(file){
+        try {
+            return await this.bucket.createFile(
+                conf.appwriterBucketId,
+                ID.unique(),
+                file,
+            )
+            
+        } catch (error) {
+            console.log("Appwrite service :: uploadFile :: error", error);
+            return false
+            
+        }
+    }
+
+    async deleteFile(fileId){
+        try {
+            await this.bucket.deleteFile(
+                conf.appwriterBucketId,
+                fileId
+            )
+            
+        } catch (error) {
+            console.log("Appwrite service :: deleteFile :: error", error );
+            return false
+            
+        }
+    }
+
+    getFilePreview(fileId){
+        return this.bucket.getFilePreview(
+            conf.appwriterBucketId,
+            fileId
+        )
     }
    
 }
