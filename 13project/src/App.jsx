@@ -12,6 +12,7 @@ function App() {
     <>
     <h1>govind singh solanki</h1>
     <Name/>
+    <Name govind={{name: "govind"}}/>
      
      
     </>
