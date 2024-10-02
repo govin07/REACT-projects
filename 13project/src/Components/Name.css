@@ -1,0 +1,8 @@
+h2{
+    color: red;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin: 25px 50px;
+    padding: 12px;
+}

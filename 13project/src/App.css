@@ -1,0 +1,12 @@
+h1{
+  color: gold;
+  text-align: center;
+  font-size: small;
+  border-bottom: 1px solid rgb(51, 47, 47);
+  padding: 10px;
+  font-size: 60px;
+}
+button{
+  margin: 0px 50% auto;
+  
+}
