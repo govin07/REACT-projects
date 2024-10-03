@@ -1,11 +1,19 @@
 import './Name.css'
  
  
-export default function Name(...name){
+export default function Name(props){
+    // Array.from(props)
+    Object.keys(props)
+    console.log(props)
+    // console.log(props)
+    const Name = props.call.name
+    const lastName = props.call.lastName
     return(
         <>
-        {/* <h2>Aditya singh Tawar</h2> */}
-        <h2>`my name is ${name.name}`</h2>
+        <h1>my name is {Name} singh {lastName}</h1>
+        
+        
+        
         </>
     )
 }

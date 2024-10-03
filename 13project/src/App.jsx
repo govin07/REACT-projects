@@ -5,14 +5,19 @@ import Name from './Components/Name'
 import './App.css'
 
 function App() {
+  let [name , setName] = useState("nitin")
+
   
 
 
   return (
     <>
-    <h1>govind singh solanki</h1>
-    <Name/>
-    <Name govind={{name: "govind"}}/>
+    <h1>{name}</h1>
+    <button onClick={() => setName(name = "govind")}>click me</button>
+    
+     <Name call = {{name:"Govind", lastName:"solani"}}/>
+    <Name call = {{name:"Deepanshu", lastName:"chouhan"}}/>
+    <Name call= {{name:"Aditya", lastName:"Tawar"}}/>
      
      
     </>
