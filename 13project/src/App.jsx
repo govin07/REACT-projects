@@ -6,14 +6,19 @@ import './App.css'
 
 function App() {
   let [name , setName] = useState("nitin")
+  let [last, setLast] = useState("solanki")
+  function changeName(){
+    setName(name = "sachin")
+    setLast(last = "Rajput")
+  }
 
   
 
 
   return (
     <>
-    <h1>{name}</h1>
-    <button onClick={() => setName(name = "govind")}>click me</button>
+    <h1>{name} singh {last}</h1>
+    <button onClick={changeName}>click me</button>
     
      <Name call = {{name:"Govind", lastName:"solani"}}/>
     <Name call = {{name:"Deepanshu", lastName:"chouhan"}}/>
