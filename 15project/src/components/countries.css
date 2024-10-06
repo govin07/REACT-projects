@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.country{
+    width: fit-content;
+    height: fit-contents;
+    border: 1px dotted black;
+    margin: 20px;
+    padding: 15px;
+    background-color: aquamarine;
+    position: relative;
+    
+}
+
