@@ -28,13 +28,43 @@ function App() {
     },
      
   ])
- 
+  let [isLoggedIn, setLoggedIn] = useState(true)
 
+  function newArr(){
+    setCoutries( coutrties = [{
+      country: "pakistan",
+      capital : "islamabaad",
+      population: "222m",
+    },
+    {
+      country: "bangladesh",
+      capital : "daka",
+      population: "120m",
+    }
+  ])
+  }
+  function changeLog(){
+    setLoggedIn(false)
+  }
+ 
+   
 
   return (
     <>
-       <Countries  con = {coutrties}/>
-       <Countries con = {coutrties}/>
+    {
+        isLoggedIn == true? (<h2>welcome</h2>
+        ) : (<h2>please log in</h2>)
+    }
+      {
+        
+        coutrties.map((country)=>{
+          return(
+             <Countries name={country.country} cap={country.capital} pop={country.population}/>
+          )
+        })
+      }
+      <button onClick={changeLog}>click me</button>
+      <button onClick={newArr}>load new arr</button>
     </>
   )
 }
