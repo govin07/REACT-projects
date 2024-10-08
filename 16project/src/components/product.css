@@ -1,0 +1,30 @@
+
+
+.product{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 15px;
+    width: fit-content;
+    height: fit-content;
+    background-color: aquamarine;
+    padding: 15px;
+    border: 1px solid grey;
+    margin: 10px;
+    
+}
+.box{
+    
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(117, 76, 76);
+    color: white;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+.box img{
+    width: 40%;
+}
+.box h1{
+    font-size: 12px;
+    text-wrap: balance;
+}
