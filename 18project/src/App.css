@@ -1,0 +1,12 @@
+.input-form{
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: rgb(56, 61, 59);
+  color: aliceblue;
+}
+.input-form h1{
+  color: rgb(205, 142, 24);
+  font-size: 25px;
+}
