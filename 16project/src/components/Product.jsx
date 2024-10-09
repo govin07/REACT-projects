@@ -26,7 +26,7 @@ export default function Product(){
                 data.map((ob)=>{
                     console.log(ob)
                     return(
-                        <div className='box'>
+                        <div className='box' key={ob.id}>
                             <img src={ob.image} alt="" />
                             <h1>title: {ob.title}</h1>
                             <h2>price: {ob.price}</h2>
