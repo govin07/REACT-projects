@@ -5,19 +5,32 @@ import './App.css'
 import Form from './components/Form'
 
 function App() {
-  const [name, setName] = useState("")
+  // const [name, setName] = useState("")
+  let [details, setDetails] = useState({
+  })
   function handleInput(el){
     
-    setName(el.target.value)
+    setDetails((prev) => {
+      console.log(prev)
+      return {...prev, [el.target.name]: el.target.value}
+
+    })
+    console.log(details)
+  }
+  function showInput(){
+    <h1>{details.name}</h1>
   }
 
   return (
     <>
     <div className="input-form">
-      <input type="text" 
+      <input type="text" name='name'
        onChange={handleInput}
-      placeholder='Enter Name' value={name} />
-      <h1>{name}</h1>
+      placeholder='Enter Name' value={details.name} />
+      <input type="text" name='Email' placeholder='Email' onChange={handleInput} value={details.Email}/>
+      <button onClick={showInput}>submit</button>
+      {/* <h1>{details.name}</h1> */}
+      {/* <h1>{details.Email}</h1> */}
       </div>
       
     </>
