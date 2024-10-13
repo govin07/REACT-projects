@@ -1,0 +1,47 @@
+.about{
+  border: 1px solid lightcoral;
+  width: fit-content;
+  text-wrap: balance;
+  padding: 12px;
+  background-color: aqua;
+  
+}
+.product
+{ 
+  margin-top: 15px;
+  padding: 20px;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.prod
+{
+  background-color: cadetblue;
+  width: fit-content;
+  padding: 15px;
+  border: 1px solid lightgray ;
+  margin-top: 12px;
+}
+.service
+{ 
+  margin-top: 15px;
+  padding: 20px;
+  background-color: rgb(193, 124, 39);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.serv
+{
+  background-color: rgb(37, 144, 85);
+  width: fit-content;
+  padding: 15px;
+  border: 1px solid lightgray ;
+  margin-top: 12px;
+}
+

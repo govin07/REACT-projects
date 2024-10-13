@@ -18,7 +18,7 @@ function App() {
     console.log(details)
   }
   function showInput(){
-    <h1>{details.name}</h1>
+    // <h1>{details.name}</h1>
   }
 
   return (
@@ -29,8 +29,8 @@ function App() {
       placeholder='Enter Name' value={details.name} />
       <input type="text" name='Email' placeholder='Email' onChange={handleInput} value={details.Email}/>
       <button onClick={showInput}>submit</button>
-      {/* <h1>{details.name}</h1> */}
-      {/* <h1>{details.Email}</h1> */}
+      <h1>{details.name}</h1>
+      <h1>{details.Email}</h1>
       </div>
       
     </>
