@@ -6,7 +6,7 @@ export default function Category(){
     return(
         <>
         <div className="category">
-            <h1>category component{u}</h1>
+            <h1>category component{u.name}</h1>
         </div>
         </>
     )

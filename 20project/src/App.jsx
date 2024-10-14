@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Product from './Product'
 import Category from './Category'
+import ClassDemo from './ClassDemo'
 
 export const UserName = createContext();
 
@@ -12,7 +13,8 @@ function App() {
 
   return (
     <>
-    <UserName.Provider value={name}>
+    <ClassDemo name={"Mahendra bahubali"}/>
+    <UserName.Provider value={{name, setName}}>
      <h1>hello{name}</h1>
      <Product/>
      </UserName.Provider>
