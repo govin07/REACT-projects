@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import reactLogo from './assets/react.svg'
-import {BrowserRouter , Routes , Route , Link} from 'react-router-dom'
+import {BrowserRouter , Routes , Route , Link , Outlet} from 'react-router-dom'
 import viteLogo from '/vite.svg'
 import './App.css'
 import About from './Components/About'
@@ -11,13 +11,14 @@ import Header from './Components/Header'
 import Image from './Components/Image'
 import Price from './Components/Price'
 import Location from './Components/Location'
+import RefDemo from './Components/RefDemo'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    {/* <About/> */}
+       <RefDemo/>
     
       <BrowserRouter>
            <Header/>
@@ -30,6 +31,8 @@ function App() {
            <Route path='location' element={<Location/>}/>
 
          </Route>
+
+
          <Route path='/product' element={<Product/>}/>
          <Route path='/service' element={<Service/>}/>
 
