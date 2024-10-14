@@ -1,0 +1,13 @@
+.product{
+   margin: 12%;
+   padding: 20px;
+  width: fit-content;
+  background-color: lightgray;
+}
+.category{
+  /* margin: 12%; */
+  margin: auto;
+  padding: 20px;
+  width: fit-content;
+  background-color: rgb(176, 70, 70);
+}
