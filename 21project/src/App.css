@@ -48,6 +48,21 @@
     padding: 10x;
     margin-bottom: 50px;
 }
-.form  a{
+  a{
     color: #dde01fcf;
+    text-decoration: none;
+}
+.notfound{
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(62, 178, 207); */
+
+    color: white;
+}
+.success{
+    color: green;
 }
