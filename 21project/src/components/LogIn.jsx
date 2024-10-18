@@ -1,7 +1,9 @@
-import { useState} from "react"
+import { useState,useContext} from "react"
 import { Link, useNavigate } from "react-router-dom"
+import { userContext } from "../contexts/UserContext"
 
 export default function LogIn(){
+    const contextData = useContext(userContext)
     const navigates = useNavigate()
     const [userCreds, setUserCreds] = useState({
         email: "",
@@ -26,7 +28,9 @@ export default function LogIn(){
         })
         .then((response)=>response.json())
         .then((data) => {
+        
             localStorage.setItem("nutrify-user",JSON.stringify(data))
+            contextData.setLoggedUser(data)
             navigates("/track")
         })
 
